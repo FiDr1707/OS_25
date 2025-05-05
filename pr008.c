@@ -20,7 +20,7 @@ int main() {
 		printf("Не удалось записать всю строку");
 		exit(-1);
 	}
-
+	else printf ("Строка записана в файл \"myfile\"\n");
 	printf("В файл с дескриптором %d записано %ld байт\n", fd, size);
 
 	if (close(fd)<0) {
